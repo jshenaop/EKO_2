@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Eko - Machine Learning</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+
+    <!-- Bootstrap CSS -->
+    <link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="{{ url_for('static', filename='fonts/font-awesome-4.7.0/css/font-awesome.min.css') }}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400" rel="stylesheet">
+</head>
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/footer.css') }}">
+
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"> <img class="img-responsive"
+                                                       src="{{ url_for('static', filename='img/web_logo.png') }}"> </a>
+            </div>
+
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                <li class="hidden">
+                    <a class="page-scroll" href="#page-top"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#whatis">¿QUÉ ES?</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#initiatives">INICIATIVAS</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#results">RESULTADOS</a>
+                </li>
+                <li class="login">
+                    <a class="btnLogin" href="login.html" id="signIn">LOGIN</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<section id="main" class="main-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12" style="padding-left: 0; padding-right: 0; padding-bottom: 0; position: relative">
+                <img src="{{ url_for('static', filename='img/main.png') }}" align="center" alt="icons" width="100%">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="whatis" class="whatis-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="col-lg-6">
+                    <img src="{{ url_for('static', filename='img/cloud.png') }}" align="center" alt="icons"
+                         width="100%">
+                </div>
+                <div class="col-lg-4">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <h1>
+                        <strong><font color="white" size="7em">¿QUÉ ES?
+                        </font></strong>
+                    </h1>
+                    <br>
+                    <br>
+                    <br>
+                    <p>
+                        <font color="white" size="5em">Es un ecosistema de algoritmos que automatizarán,
+                            controlarán y procesarán
+                            información generando mejoras en los procesos de la CRC.
+                        </font>
+                    </p>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="initiatives" class="initiatives-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2><strong><font color="white" size="7em">NUESTRAS INICIATIVAS
+                </font></strong></h2>
+
+                <div class="square">
+                    <div class="content">
+                        responsive squares with content . Not centered yet!
+                    </div>
+                </div>
+
+                <div class="square">
+                    <div class="content">
+                        responsive squares with content . Not centered yet!
+                    </div>
+                </div>
+
+                <div class="square">
+                    <div class="content">
+                        responsive squares with content . Not centered yet!
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="results" class="results-section">
+    <div class="container">
+        <div class="row">
+                <div class="col-lg-6 col-lg-offset-6 text-left">
+                    <h1><strong><font color=#3A3A3C size="7em">NUESTROS<br> RESULTADOS</font></strong></h1>
+                    <br>
+                    <br>
+                    <br>
+                    <p>
+                        <font color=#3A3A3C size="5em">Hemos ahorrado a la CRC cientos de horas que han sido utilizadas
+                            en mejores análisis regulatorios.
+                        </font>
+                    </p>
+                </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer-distributed">
+
+    <div class="footer-center center-block">
+
+        <div>
+            <img src="{{ url_for('static', filename='img/web_logo_big.png') }}" align="center" alt="icons" width="100%"
+                 class="img-responsive">
+        </div>
+
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p>
+                <a href="mailto:soporteeko@crcom.gov.co">soporteeko@crcom.gov.co</a>
+            </p>
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- jQuery -->
+<script src="{{url_for('static', filename='js/jquery.js')}}"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+
+<!-- Scrolling Nav JavaScript -->
+<script src="{{url_for('static', filename='js/jquery.easing.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/scrolling-nav.js')}}"></script>
+
+
+</body>
+
+</html>
